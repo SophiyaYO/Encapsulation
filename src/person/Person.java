@@ -81,10 +81,6 @@ public class Person {
 
     @Override
     public String toString() {
-//        return String.format("%s is %d years old",
-//                this.getFullName(),
-//                this.getAge());
-
         return String.format("%s gets %.1f leva",
                 this.getFullName(),
                 this.getSalary());
