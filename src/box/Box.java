@@ -46,4 +46,9 @@ public class Box {
         return firstFace + secondFace;
     }
 
+    public double calculateVolume() {
+
+        return this.height * this.width * this.length;
+    }
+
 }
