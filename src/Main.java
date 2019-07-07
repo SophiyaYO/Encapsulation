@@ -22,7 +22,12 @@ public class Main {
         int width = Integer.parseInt(reader.readLine());
         int height = Integer.parseInt(reader.readLine());
 
-        Box box = new Box(length, width, height);
+        try {
+            Box box = new Box(length, width, height);
+        } catch (IllegalArgumentException message) {
+            System.out.println(message.getMessage());
+        }
+
 
         System.out.println(box.calculateSurfaceArea());
         System.out.println(box.calculateLateralSurfaceArea());
@@ -75,9 +80,9 @@ public class Main {
             } catch (IllegalArgumentException e) {
                 System.out.println(e.getMessage());
             }
-            }
+        }
 
-        Team team= new Team("Black Eagles");
+        Team team = new Team("Black Eagles");
 
         people.forEach(team::addPlayer);
 

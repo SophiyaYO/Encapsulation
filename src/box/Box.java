@@ -19,14 +19,14 @@ public class Box {
     }
 
     private void setWidth(double width) {
-        if (length < 1d) {
+        if (width < 1d) {
             dataValidation("Width cannot be zero or negative.");
         }
         this.width = width;
     }
 
     private void setHeight(double height) {
-        if (length < 1d) {
+        if (height < 1d) {
             dataValidation("Height cannot be zero or negative.");
         }
         this.height = height;
@@ -34,13 +34,10 @@ public class Box {
 
     private void dataValidation(String message) {
         throw new IllegalArgumentException(message);
-
     }
 
     public double calculateSurfaceArea() {
-
         double thirdFace = 2 * this.width * this.height;
-
         return calculateLateralSurfaceArea() + thirdFace;
     }
 
