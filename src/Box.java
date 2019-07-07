@@ -1,5 +1,3 @@
-package box;
-
 public class Box {
     private double length;
     private double width;

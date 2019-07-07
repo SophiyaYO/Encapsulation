@@ -1,4 +1,3 @@
-import box.Box;
 import person.Person;
 import team.Team;
 
