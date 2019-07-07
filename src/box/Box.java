@@ -12,24 +12,29 @@ public class Box {
     }
 
     private void setLength(double length) {
-        dataValidation(length, "Length cannot be zero or negative.");
+        if (length < 1d) {
+            dataValidation("Length cannot be zero or negative.");
+        }
         this.length = length;
     }
 
     private void setWidth(double width) {
-        dataValidation(width, "Width cannot be zero or negative.");
+        if (length < 1d) {
+            dataValidation("Width cannot be zero or negative.");
+        }
         this.width = width;
     }
 
     private void setHeight(double height) {
-        dataValidation(height, "Height cannot be zero or negative.");
+        if (length < 1d) {
+            dataValidation("Height cannot be zero or negative.");
+        }
         this.height = height;
     }
 
-    private void dataValidation(double length, String s) {
-        if (length < 1) {
-            throw new IllegalArgumentException(s);
-        }
+    private void dataValidation(String message) {
+        throw new IllegalArgumentException(message);
+
     }
 
     public double calculateSurfaceArea() {
