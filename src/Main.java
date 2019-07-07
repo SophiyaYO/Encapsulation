@@ -18,9 +18,9 @@ public class Main {
                 );
 
 //        int n = Integer.parseInt(reader.readLine());
-        int length = Integer.parseInt(reader.readLine());
-        int width = Integer.parseInt(reader.readLine());
-        int height = Integer.parseInt(reader.readLine());
+        double length = Double.parseDouble(reader.readLine());
+        double width =  Double.parseDouble(reader.readLine());
+        double height = Double.parseDouble(reader.readLine());
 
         try {
             Box box = new Box(length, width, height);
@@ -36,7 +36,6 @@ public class Main {
 //        printValidationData(reader, n);
 
 //        printSortedPeople(reader, n);
-
 
     }
 

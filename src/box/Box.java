@@ -37,12 +37,12 @@ public class Box {
     }
 
     public double calculateSurfaceArea() {
-        double thirdFace = 2 * this.width * this.height;
+        double thirdFace = 2 * this.length * this.width;
         return calculateLateralSurfaceArea() + thirdFace;
     }
 
     public double calculateLateralSurfaceArea() {
-        double firstFace = 2 * this.length * this.width;
+        double firstFace = 2 * this.height * this.width;
         double secondFace = 2 * this.length * this.height;
 
         return firstFace + secondFace;
