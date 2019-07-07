@@ -1,3 +1,4 @@
+import box.Box;
 import person.Person;
 import team.Team;
 
@@ -16,9 +17,19 @@ public class Main {
                         )
                 );
 
-        int n = Integer.parseInt(reader.readLine());
+//        int n = Integer.parseInt(reader.readLine());
+        int length = Integer.parseInt(reader.readLine());
+        int width = Integer.parseInt(reader.readLine());
+        int height = Integer.parseInt(reader.readLine());
 
-        printValidationData(reader, n);
+        Box box = new Box(length, width, height);
+
+        System.out.println(box.calculateSurfaceArea());
+        System.out.println(box.calculateLateralSurfaceArea());
+        System.out.println(box.calculateVolume());
+
+
+//        printValidationData(reader, n);
 
 //        printSortedPeople(reader, n);
 
